@@ -50,7 +50,6 @@ function GroupProduct() {
                 ))}
             </div>
         </div>
-    )
-}
+    )}
 
 export default GroupProduct;
