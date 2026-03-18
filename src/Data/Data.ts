@@ -2,7 +2,7 @@
 
 import type { Product } from "../Type/product";
 
-export const Data : Product[]= [
+export const Data: Product[] = [
     {
         id: 1,
         price: 160,
@@ -12,11 +12,11 @@ export const Data : Product[]= [
         rating: 4.1,
         category: "Fruits",
         type: "pome",
-        
+
         details: {
-            Good_For: "Heart Health",
-            Dietary_Preference: "Veg",
-            Imported: "No",
+            good_For: "Heart Health",
+            dietary_Preference: "Veg",
+            imported: "No",
         }
     },
     {
@@ -31,13 +31,13 @@ export const Data : Product[]= [
         type: "guava",
 
         details: {
-            Good_For: "Eye Sight",
-            Dietary_Preference: "Veg",
-            Imported: "No",
+            good_For: "Eye Sight",
+            dietary_Preference: "Veg",
+            imported: "No",
         },
         season: "Winter"
     },
-    
+
     {
         id: 3,
         price: 50,
@@ -50,14 +50,14 @@ export const Data : Product[]= [
         group: "Berry",
 
         details: {
-            Good_For: "Instant Energy",
-            Dietary_Preference: "Veg",
-            Imported: "No",
+            good_For: "Instant Energy",
+            dietary_Preference: "Veg",
+            imported: "No",
         },
-        season :"Winter-Spring",
+        season: "Winter-Spring",
     },
     {
-        id: 31,
+        id: 30,
         price: 50,
         title: "Bluebery",
         img: "https://www.bbassets.com/media/uploads/p/l/40083980_9-fresho-blueberry.jpg",
@@ -68,14 +68,14 @@ export const Data : Product[]= [
         group: "Berry",
 
         details: {
-            Good_For: "Instant Energy",
-            Dietary_Preference: "Veg",
-            Imported: "No",
+            good_For: "Instant Energy",
+            dietary_Preference: "Veg",
+            imported: "No",
         },
-        season :"Summer",
+        season: "Summer",
     },
     {
-        id: 32,
+        id: 31,
         price: 50,
         title: "Rasberry",
         img: "https://pbs.twimg.com/media/DgGFW-QUEAAEvJW.jpg",
@@ -86,14 +86,14 @@ export const Data : Product[]= [
         group: "Berry",
 
         details: {
-            Good_For: "Instant Energy",
-            Dietary_Preference: "Veg",
-            Imported: "No",
+            good_For: "Instant Energy",
+            dietary_Preference: "Veg",
+            imported: "No",
         },
-        season :"Summer-Early-Autumn",
+        season: "Summer-Early-Autumn",
     },
     {
-        id: 33,
+        id: 32,
         price: 50,
         title: "Blackberry",
         img: "https://www.gurneys.com/cdn/shop/files/80886A.webp?v=1729086281",
@@ -104,11 +104,11 @@ export const Data : Product[]= [
         group: "Berry",
 
         details: {
-            Good_For: "Instant Energy",
-            Dietary_Preference: "Veg",
-            Imported: "No",
+            good_For: "Instant Energy",
+            dietary_Preference: "Veg",
+            imported: "No",
         },
-        season :"Summer",
+        season: "Summer",
     },
     {
         id: 4,
@@ -121,9 +121,9 @@ export const Data : Product[]= [
         type: "citrus",
 
         details: {
-            Good_For: "Blood pressure",
-            Dietary_Preference: "Veg",
-            Imported: "No",
+            good_For: "Blood pressure",
+            dietary_Preference: "Veg",
+            imported: "No",
         }
     },
     {
@@ -137,9 +137,9 @@ export const Data : Product[]= [
         type: "berry",
 
         details: {
-            Good_For: "Cognitive Function",
-            Dietary_Preference: "Veg",
-            Imported: "No",
+            good_For: "Cognitive Function",
+            dietary_Preference: "Veg",
+            imported: "No",
         }
     },
     {
@@ -153,11 +153,13 @@ export const Data : Product[]= [
         type: "jeans",
 
         details: {
-            Size: "34",
-            Stretchable: "Yes",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
+            size: "34",
+            stretchable: "Yes",
+            materialType: "Denim",
+            brand: "The Indian Garage Co",
+            gender: "Men",
             style: "Classic",
+            colorName: "Dark Blue",
         }
     },
     {
@@ -171,14 +173,14 @@ export const Data : Product[]= [
         type: "hoodie",
 
         details: {
-            Size: "M",
-            Material_type: "Fleece",
-            Brand: "Bullmer",
-            Gender:"Men",
-            Fit: "Regular Fit",
+            size: "M",
+            stretchable: "Yes",
+            material_type: "Fleece",
+            brand: "Bullmer",
+            gender: "Men",
+            style: "Casual",
+            colorName: "Black",
         }
-
-
     },
     {
         id: 8,
@@ -192,9 +194,11 @@ export const Data : Product[]= [
 
         details: {
             Size: "32",
-            Material_type: "Cotton Blend",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
+            stretchable: "No",
+            material_type: "Cotton Blend",
+            brand: "The Indian Garage Co",
+            gender: "Men",
+            style: "Formal",
             color_name: "Grey",
         }
 
@@ -210,13 +214,15 @@ export const Data : Product[]= [
         type: "Polo T-shirt",
 
         details: {
-            Size: "XL",
-            Fit: "Regular Fit",
-            Brand: "Outlaws",
-            Gender:"male",
-            Model_name: "Premium",
+            size: "XL",
+            stretchable: "Yes",
+            materialType: "Cotton",
+            brand: "Outlaws",
+            gender: "male",
+            style: "Casual",
+            colorName: "Navy Blue",
         }
-        
+
     },
     {
         id: 10,
@@ -226,32 +232,33 @@ export const Data : Product[]= [
         review: "1.5k",
         rating: 4,
         category: "Fashion",
-        type:"Casual Shirt",
+        type: "Casual Shirt",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            size: "XL",
+            stretchable: "Yes",
+            material_type: "Cotton",
+            brand: "The Indian Garage Co",
+            gender: "Men",
+            style: "Casual",
+            color_name: "Navy Blue"
         }
     },
     {
         id: 11,
         price: 120,
-        title: "Fitness Fruits",
+        title: "Fresh Fitness Fruits",
         img: "https://nomadsclothing.famlive.net/Mobile/assets/img/img/grocery/single/01.jpg",
         review: "1.6k",
         rating: 3.9,
-        category: "Grossary",
-        type:"Casual Shirt",
+        category: "Grocery",
+        type: "Fresh Fruits",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Local Farm",
+            weight: "500g",
+            type: "Mixed Fruits",
+            freshness: "Farm Fresh",
         }
 
     },
@@ -262,15 +269,14 @@ export const Data : Product[]= [
         img: "https://www.jiomart.com/images/product/original/rvxaoomyr4/a-one-grocery-cashew-nuts-250-g-product-images-orvxaoomyr4-p604239483-0-202308301622.jpg?im=Resize=(420,420)",
         review: "405",
         rating: 3.8,
-        category: "Grossary",
-        type:"Casual Shirt",
+        category: "Grocery",
+        type: "Dry Fruits",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "A-One Grocery",
+            weight: "250g",
+            type: "Cashew Nuts",
+            packaging: "Pouch"
         }
     },
     {
@@ -280,33 +286,31 @@ export const Data : Product[]= [
         img: "https://m.media-amazon.com/images/I/5136Y63Lq4L._SL500_.jpg",
         review: "3k",
         rating: 4.3,
-        category: "Grossary",
-        type:"Casual Shirt",
+        category: "Grocery",
+        type: "Salt",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Tata",
+            weight: "1kg",
+            type: "Iodized Salt",
+            packaging: "Pouch"
         }
     },
     {
         id: 14,
         price: 123,
-        title: "No.1",
+        title: "Godrej No.1 soap",
         img: "https://vrmshoppe.com/wp-content/uploads/2021/06/godrej-no-1-sandal-turmeric-soap-100-g-pack-of-4-4-20201222.jpg",
         review: "890",
         rating: 4.7,
-        category: "Grossary",
-        type:"Casual Shirt",
+        category: "Grocery",
+        type: "Bath Soap",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Godrej",
+            weight: "100g x 4",
+            fragrance: "Sandal & Turmeric",
+            skinType: "All Skin Types"
         }
     },
     {
@@ -316,15 +320,14 @@ export const Data : Product[]= [
         img: "https://images.apollo247.in/pub/media/catalog/product/L/A/LAV0041_1-AUG23_1.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%20400w",
         review: "1.1k",
         rating: 4,
-        category: "Grossary",
-        type:"Casual Shirt",
+        category: "Grocery",
+        type: "Bath Soap",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Lavo",
+            weight: "100g",
+            fragrance: "Fresh",
+            skinType: "All Skin Types"
         }
     },
     {
@@ -335,14 +338,12 @@ export const Data : Product[]= [
         review: "203",
         rating: 3.7,
         category: "Electronics",
-        type:"Casual Shirt",
+        type: "Headphones",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Croma",
+            duration: "20 Hours",
+            color: "Black"
         }
     },
     {
@@ -353,14 +354,12 @@ export const Data : Product[]= [
         review: "187",
         rating: 4.1,
         category: "Electronics",
-        type:"Casual Shirt",
+        type: "Fast Charger",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Generic",
+            duration:"30 minutes",
+            color: "White"
         }
     },
     {
@@ -371,14 +370,12 @@ export const Data : Product[]= [
         review: "89",
         rating: 4,
         category: "Electronics",
-        type:"Casual Shirt",
+        type: "Extension Board",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Kaltron",
+            duration:"null",
+            color: "White"
         }
     },
     {
@@ -389,212 +386,187 @@ export const Data : Product[]= [
         review: "156",
         rating: 3.6,
         category: "Electronics",
-        type:"Casual Shirt",
+        type: "Power Bank",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Coolnut",
+            duration:"30 minutes",
+            color: "black"
         }
     },
     {
         id: 20,
-        price: 299,
-        title: "GIZMORE 360 Rotable Phoe stand",
-        img: "https://gizmore.in/cdn/shop/files/1_480ede98-1a4f-4f9a-a379-d6165d1d2a55.jpg?v=1721133433&width=1920",
-        review: "57",
-        rating: 3.9,
-        category: "Electronics",
-        type:"Casual Shirt",
-
-        details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
-        }
-    },
-    {
-        id: 21,
         price: 2000,
         title: "Nike Sports",
         img: "https://m.media-amazon.com/images/X/bxt1/M/fbxt1Rza7tR$lhx._SL828_QL90_FMwebp_.jpg",
         review: "2.7k",
         rating: 4.8,
         category: "Shoe",
-        type:"Casual Shirt",
+        type: "Sports Shoes",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            size: "9",
+            materialType: "Mesh",
+            brand: "Nike",
+            gender: "Men",
+            soleType: "Rubber"
         }
     },
     {
-        id: 22,
+        id: 21,
         price: 2799,
         title: "Nike jordan retro1",
         img: "https://mlmup5yq2bpm.i.optimole.com/cb:6xMT.4c76e/w:810/h:1080/q:mauto/g:sm/f:best/https://rigilclothing.in/wp-content/uploads/2023/01/290474475_5410618732359848_8858111255020489025_n-jpg.webp",
         review: "1k",
         rating: 4.4,
         category: "Shoe",
-        type:"Casual Shirt",
+        type: "Sneakers",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            size: "9",
+            materialType: "Leather",
+            brand: "Nike",
+            gender: "Men",
+            soleType: "Rubber"
         }
     },
     {
-        id: 23,
+        id: 22,
         price: 1999,
         title: "Shop kidds Jumpstart",
         img: "https://www.tracerindia.com/cdn/shop/files/01_1_3d67a88c-0284-477f-a1e5-1a729ced28cb.jpg?v=1688715778",
         review: " 307",
         rating: 3.9,
         category: "Shoe",
-        type:"Casual Shirt",
+        type: "Casual Shoes",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            size: "8",
+            material_type: "Synthetic",
+            brand: "Tracer",
+            gender: "Kids",
+            sole_type: "Rubber"
         }
     },
     {
-        id: 24,
+        id: 23,
         price: 2500,
         title: "Basketball Shoes",
         img: "https://static.nbastore.in/resized/900X900/1263/nike-mens-precision-8-mid-basketball-shoes-blackwhiteice-blue-blackwhiteice-blue-6981997a0d600.jpg?format=webp",
         review: "504",
         rating: 4.1,
         category: "Shoe",
-        type:"Casual Shirt",
+        type: "Basketball Shoe",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            size:"7",
+            materialType:"Flyknit",
+            brand: "Nike",
+            gender: "Men", 
+            soleType: "Rubber",
         }
     },
     {
-        id: 25,
+        id: 24,
         price: 3499,
         title: "Adidas Trae Young 3",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRso5QEuWwI18oGbiow0rQ0ihtQ4A8M_CHE1w&s",
         review: "1.9k",
         rating: 4.5,
         category: "Shoe",
-        type:"Casual Shirt",
+        type: "Basketball Shoe",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            size:"6",
+            brand: "Adidas",
+            materialType:"Leather",
+            gender: "Men",
+            soleType: "Rubber",
         }
     },
     {
-        id: 26,
+        id: 25,
         price: 229,
-        title: "Lipstick",
+        title: "Matte Lipstick",
         img: "https://bellavitaorganic.com/cdn/shop/files/W_pink-pout.jpg?v=1718884717&width=1000",
         review: "358",
         rating: 3.9,
         category: "Beauty",
-        type:"Casual Shirt",
+        type: "Lipstick",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Bella Vita Organic",
+            skin_Type: "All Skin Types",
+            waterproof: "Yes",
+            net_Quantity: "4.2 g",
         }
     },
     {
-        id: 27,
+        id: 26,
         price: 300,
-        title: "Kajal and Eyeliner",
+        title: "Kajal and Eyeliner Combo",
         img: "https://m.media-amazon.com/images/I/71sQIaJ4fBL._AC_UF1000,1000_QL80_.jpg",
         review: " 305",
         rating: 3.7,
         category: "Beauty",
-        type:"Casual Shirt",
+        type: "Eye Makeup",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Lakme",
+            waterproof: "Yes",
+            skin_Type: "Sensitive Skin",
+            net_Quantity: "2 Pieces",
         }
     },
     {
-        id: 28,
+        id: 27,
         price: 360,
-        title: "Fit Me Foundation",
+        title: "Maybelline Fit Me Foundation",
         img: "https://images-cdn.ubuy.co.in/6809132bb49ee302cb05b3c1-maybelline-fit-me-matte-poreless.jpg",
         review: "38",
         rating: 3.2,
         category: "Beauty",
-        type:"Casual Shirt",
+        type: "Foundation",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Maybelline New York",
+            skin_Type: "Normal to Oily Skin",
+            waterproof: "No",
+            net_Quantity: "30 ml",
         }
     },
     {
-        id: 29,
+        id: 28,
         price: 100,
         title: "Highlighter brush",
         img: "https://rukmini1.flixcart.com/image/1500/1500/l2urv680/brush-applicator/1/y/5/professional-highlighter-foundation-cosmetic-brush-make-up-1-original-image3hugexdfpk6.jpeg?q=70",
         review: "105",
         rating: 3.7,
         category: "Beauty",
-        type:"Casual Shirt",
+        type: "Makeup Brush",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
+            brand: "Generic",
+            waterproof: "No",
+            skin_Type: "All Skin Types",
+            net_Quantity: "1 Piece",
         }
     },
     {
-        id: 30,
+        id: 29,
         price: 320,
         title: "Mettle Liquid Lipstick",
         img: "https://www.sugarcosmetics.com/cdn/shop/files/Mettle-Liquid-Lipstick-5_65fd6049.jpg?v=1743677226&width=2000",
         review: "308",
         rating: 4.1,
         category: "Beauty",
-        type:"Casual Shirt",
+        type: "Lipstick",
 
         details: {
-            Size: "XL",
-            Material_type: "Cotton",
-            Brand: "The Indian Garage Co",
-            Gender:"Men",
-            neck_type: "Cutway",
-        }
-    },
+            brand:"Lakme",
+            skin_Type: "Dry Skin",
+            waterproof: "Yes",
+            net_Quantity: "5 ml"
+        },
+    }
 ]
