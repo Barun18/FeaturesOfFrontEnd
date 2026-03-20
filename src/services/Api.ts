@@ -1,4 +1,4 @@
-
+//! fetching locally stored data 
 // import {Data} from "../Data/Data";
 // import type { Product } from '../Type/product'
 
@@ -14,3 +14,12 @@ export async function getProductData (){
    }
    return res.json();
 } 
+
+export async function getSingleProduct(id: string){
+    const res = await fetch(`http://localhost:5000/products/${id}`)
+
+    if(!res.ok){
+      throw new Error("Failed to fetch product");
+    }
+    return res.json();
+}

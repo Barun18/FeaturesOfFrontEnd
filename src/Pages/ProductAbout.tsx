@@ -1,23 +1,28 @@
 import { useParams } from "react-router-dom";
-import { getProductData } from '../services/Api';
+import { getSingleProduct } from '../services/Api';
 import useCartStore from "../store/useCartStore";
 import useReviewStore from "../store/reviewStore";
 import "../Css/ProductAbout.css"
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 
 
 function ProductAbout() {
 
-
   const { id } = useParams();
-  const item = getProductData();
+   const [item, setItem] = useState<any>(null)
 
-  const cartItem = item.find((i) => i.id.toString() === id)
-  if (!cartItem) return <h2>No product found!!! </h2>;
-  const addToCart = useCartStore((state) => state.addToCart)
+  useEffect(() =>{
+    async function fetchProduct(){
+     const data = await getSingleProduct(id!);
+     setItem(data);
+    }
+    fetchProduct();
+  },[id])
+const addToCart = useCartStore((state) => state.addToCart)
 
-
+  // const cartItem = item.find((i) => i.id.toString() === id)
+ 
+  
   const [name, setName] = useState("");
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
@@ -53,27 +58,31 @@ function ProductAbout() {
     reader.readAsDataURL(file);
   };
 
+if(!item) return <div>Loading...</div>
 
   return (
     <div>
+
       <div className="product-img flex items-start gap-6">
         <div>
           <img
-            src={cartItem.img} alt={cartItem.title} width={200} />
-          <h2>{cartItem.title}</h2>
-          <h2>₹{cartItem.price}</h2>
+            src={item.img} alt={item.title} width={200} />
+          <h2>{item.title}</h2>
+          <h2>₹{item.price}</h2>
+
           <button
             className="cardAbout"
-            onClick={() => addToCart(cartItem)}>
+            onClick={() => addToCart(item)}>
             Add to Cart
           </button>
+
         </div>
         <div className="product-About">
           Highlight
           <table className="w-full border border-gray-400">
             <tbody>
-              {cartItem.details ? (
-                Object.entries(cartItem.details).map(([key, value]) => (
+              {item.details ? (
+                Object.entries(item.details as Record<string, any>).map(([key, value]) => (
                   <tr key={key}>
                     <td className="border p-2 font-semibold">{key}</td>
                     <td className="border p-2 ">{value}</td>
@@ -143,6 +152,23 @@ function ProductAbout() {
           </div>
         ))
       }
+
+
+
+      {/* <img src={item.img} width="200"/>
+      <h2>{item.title}</h2>
+      <p>Price:{item.price}</p> */}
+       {/* <div>
+        {
+          Object.entries(item.details as Record<string, any>).map(([key, value])=>(
+            <p key={key}>
+              {key}:{value}
+            </p>
+          ))
+        }
+      </div>  */}
+
+
     </div>
   )
 
